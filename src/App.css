@@ -1,38 +1,139 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'PT Sans', sans-serif;
   }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  
+  .home,
+  .services,
+  .products,
+  .sign-up {
+    display: flex;
+    height: 90vh;
+    align-items: center;
+    justify-content: center;
+    font-size: 3rem;
   }
-  to {
-    transform: rotate(360deg);
+  
+  .services {
+    background-image: url('images/img-2.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: #fff;
+    font-size: 100px;
   }
+  
+  .products {
+    background-image: url('images/img-1.jpg');
+    background-position: center;
+    background-size: fill;
+    background-repeat: no-repeat;
+    color: #fff;
+    font-size: 100px;
+  }
+  
+  .sign-up {
+    background-image: url('images/img-8.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: #fff;
+    font-size: 100px;
+  }
+
+  .container {
+    width: 100%;
+    height: 100vh;
+    background: pink;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  form{
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    padding: 2vw 4vw;
+    width: 90%;
+    max-width: 600px;
+    border-radius: 10px;
+  }
+
+  form h3 {
+    color: #242424;
+    font-weight: 800;
+    margin-bottom: 20px;
+  }
+
+  form input, form textarea, #inputDate{
+    border: 0;
+    margin: 10px 0;
+    margin-top: 0;
+    padding: 20px;
+    background: #e9e9e9;
+    font-size: 16px;
+    color: #757575 !important;
+  }
+
+  .elementor-field-label:after {
+    content: "*";
+    color: red;
+    padding-left: .2em;
+}
+
+::-webkit-calendar-picker-indicator {
+  color: #757575;
+  filter:opacity(.55);
+}
+
+select#event {
+  border: 0;
+  margin: 10px 0;
+  margin-top: 0;
+  padding: 20px;
+  background: #e9e9e9;
+  font-size: 16px;
+  color: #757575 !important;
+
+  /* Arrow */
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3e%3cpolyline points='6 9 12 15 18 9'%3e%3c/polyline%3e%3c/svg%3e");
+  background-repeat: no-repeat;
+  background-position: right 1rem center;
+  background-size: 1em;
+}
+
+label {
+  display: inline-block;
+  margin-bottom: .35rem;
+}
+
+.center {
+    left: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem 0;
+    margin-top: -.5rem;
+}
+
+.submit-btn {
+  padding: 12px 26px;
+  font-size: 20px;
+  width: 100%;
+  background-color: var(--secondary);
+  color: #fff;
+  border: 1px solid var(--secondary);
+}
+
+.submit-btn:hover {
+  border: 1px solid var(--secondary);
+  background-color: #fff;
+  color: #242424;
+  transition: all 0.3s ease-out;
 }
