@@ -8,5 +8,4 @@ phases:
             - sudo npm run build 
     post_build:
         commands:
-            - sudo aws s3 cp --recursive ./build s3://www.bucketgang/
             - sudo aws cloudfront create-invalidation --distribution-id E2LWYYX50K8Q2 --path /\*
