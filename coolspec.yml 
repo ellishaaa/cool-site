@@ -2,11 +2,11 @@ version: 0.2
 phases:
     pre_build:
         commands:
-            - npm install
+            - sudo npm install --force
     build:
         commands:
-            - sudo npm run build --force
+            - sudo npm run build 
     post_build:
         commands:
-            - aws s3 cp --recursive ./build s3://www.bucketgang/
-            - aws cloudfront create-invalidation --distribution-id E2LWYYX50K8Q2 --path /\*
+            - sudo aws s3 cp --recursive ./build s3://www.bucketgang/
+            - sudo aws cloudfront create-invalidation --distribution-id E2LWYYX50K8Q2 --path /\*
