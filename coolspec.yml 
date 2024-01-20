@@ -4,10 +4,8 @@ phases:
     pre_build:
         commands:
             - npm install
-            - pwd && find . -name "buildspec.yml"
     build:
-        commands: 
-            - pwd && find . -name "buildspec.yml"
+        commands:
             - npm run build
     post_build:
         commands:
