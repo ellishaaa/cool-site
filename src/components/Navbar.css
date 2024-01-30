@@ -98,6 +98,7 @@
       opacity: 1;
       transition: all 0.5s ease;
       z-index: 1;
+      justify-content: flex-start;
     }
   
     .nav-links {
@@ -169,7 +170,6 @@
 a.navbar-logo:hover {
   color: #fff;
   text-decoration: none;
-  padding: 12px 26px;
   width: 100%;
 }
 
@@ -179,4 +179,11 @@ a.navbar-logo:hover {
 
 .navbar-container .btn-mobile{
   margin-top: -1rem;
+}
+
+@media screen and (max-width: 767px){
+  .navbar-logo {
+    margin-top: -.75rem;
+    margin-left: -.75rem;
+}
 }
