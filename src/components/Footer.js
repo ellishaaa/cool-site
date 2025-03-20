@@ -3,6 +3,9 @@ import { Button } from './Button'
 import './Footer.css';
 import { Link } from 'react-router-dom';
 
+// Get year for copyright
+var thisYear = currentTime.getFullYear();
+
 function Footer() {
     return (
         <div className='footer-container'>
@@ -52,14 +55,14 @@ function Footer() {
                   <i className='fas fa-typo3' />
                 </Link>
               </div>
-              <small className='website-rights'>TRVL © 2020</small>
+              <small className='website-rights'>ellishaaa.dev © {thisYear} </small>
               <div className='social-icons'>
 
                 <Link
-                  className='social-icon-link instagram'
-                  to='/'
+                  className='social-icon-link github'
+                  to='https://github.com/ellishaaa'
                   target='_blank'
-                  aria-label='Instagram'
+                  aria-label='Github'
                 >
                   <i className='fa-brands fa-github' />
                 </Link>
