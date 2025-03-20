@@ -51,13 +51,6 @@ function Footer() {
                 <Link to='/'>Agency</Link>
                 <Link to='/'>Influencer</Link>
               </div>
-              <div className='footer-link-items'>
-                <h2>Social Media</h2>
-                <Link to='/'>Instagram</Link>
-                <Link to='/'>Facebook</Link>
-                <Link to='/'>Youtube</Link>
-                <Link to='/'>Twitter</Link>
-              </div>
             </div>
           </div>
           <section className='social-media'>
@@ -70,41 +63,19 @@ function Footer() {
               </div>
               <small className='website-rights'>TRVL © 2020</small>
               <div className='social-icons'>
-                <Link
-                  className='social-icon-link facebook'
-                  to='/'
-                  target='_blank'
-                  aria-label='Facebook'
-                >
-                  <i className='fa-brands fa-facebook-f' />
-                </Link>
+
                 <Link
                   className='social-icon-link instagram'
                   to='/'
                   target='_blank'
                   aria-label='Instagram'
                 >
-                  <i className='fa-brands fa-instagram' />
+                  <i className='fa-brands fa-github' />
                 </Link>
-                <Link
-                  className='social-icon-link youtube'
-                  to='/'
-                  target='_blank'
-                  aria-label='Youtube'
-                >
-                  <i className='fa-brands fa-youtube' />
-                </Link>
-                <Link
-                  className='social-icon-link twitter'
-                  to='/'
-                  target='_blank'
-                  aria-label='Twitter'
-                >
-                  <i className='fa-brands fa-twitter' />
-                </Link>
+
                 <Link
                   className='social-icon-link linkedin'
-                  to='/'
+                  to='https://www.linkedin.com/in/ellisha-weber-585813191'
                   target='_blank'
                   aria-label='LinkedIn'
                 >
