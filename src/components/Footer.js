@@ -4,7 +4,7 @@ import './Footer.css';
 import { Link } from 'react-router-dom';
 
 // Get year for copyright
-var thisYear = currentTime.getFullYear();
+var thisYear = Date().getFullYear();
 
 function Footer() {
     return (
