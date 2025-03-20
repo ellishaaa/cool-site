@@ -25,7 +25,7 @@ function Footer() {
               </form>
             </div>
           </section>
-          <div className='footer-links'>
+          {/* <div className='footer-links'>
             <div className='footer-link-wrapper'>
               <div className='footer-link-items'>
                 <h2>About Us</h2>
@@ -43,16 +43,7 @@ function Footer() {
                 <Link to='/'>Sponsorships</Link>
               </div>
             </div>
-            <div className='footer-link-wrapper'>
-              <div className='footer-link-items'>
-                <h2>Videos</h2>
-                <Link to='/'>Submit Video</Link>
-                <Link to='/'>Ambassadors</Link>
-                <Link to='/'>Agency</Link>
-                <Link to='/'>Influencer</Link>
-              </div>
-            </div>
-          </div>
+          </div> */}
           <section className='social-media'>
             <div className='social-media-wrap'>
               <div className='footer-logo'>
