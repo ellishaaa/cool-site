@@ -3,9 +3,6 @@ import { Button } from './Button'
 import './Footer.css';
 import { Link } from 'react-router-dom';
 
-// // Get year for copyright
-// var thisYear = Date().getFullYear();
-
 function Footer() {
     return (
         <div className='footer-container'>
@@ -37,7 +34,7 @@ function Footer() {
                   <i className='fas fa-typo3' />
                 </Link>
               </div>
-              <small className='website-rights'>ellishaaa.dev ©  </small>
+              <small className='website-rights'>ellishaaa.dev © {(new Date().getFullYear())}</small>
               <div className='social-icons'>
 
                 <Link
