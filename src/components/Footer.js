@@ -28,13 +28,7 @@ function Footer() {
 
           <section className='social-media'>
             <div className='social-media-wrap'>
-              <div className='footer-logo'>
-                <Link to='/' className='social-logo'>
-                  TRVL
-                  <i className='fas fa-typo3' />
-                </Link>
-              </div>
-              <small className='website-rights'>ellishaaa.dev © {(new Date().getFullYear())}</small>
+              <small className='website-rights'>ellishaaa © {(new Date().getFullYear())}</small>
               <div className='social-icons'>
 
                 <Link
