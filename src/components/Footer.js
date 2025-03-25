@@ -11,15 +11,9 @@ function Footer() {
             Got a question or just wanna say hey? I'm here for it.
             </p>
             <div className='input-areas'>
-              <form>
-                <input
-                  className='footer-input'
-                  name='email'
-                  type='email'
-                  placeholder='Your Email'
-                />
-                <Button buttonStyle='submit-btn'>Hit Me Up!</Button>
-              </form>
+            <Link to="/sign-up">
+            <Button buttonStyle='submit-btn'>Hit Me Up!</Button>
+            </Link>
             </div>
           </section>
 

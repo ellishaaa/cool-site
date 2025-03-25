@@ -59,7 +59,7 @@ const EmailForm = () => {
         id='name'
         type='text'
         name='name'
-        placeholder='Mario Rodriguez'
+        placeholder='John Doe'
         value={name}
         onChange={(e) => setName(e.target.value)}/>
 
@@ -69,7 +69,7 @@ const EmailForm = () => {
         id='email'
         type='email'
         name='email'
-        placeholder='mrodriguez@gmail.com'
+        placeholder='j.doe123@gmail.com'
         value={email}
         onChange={(e) => setEmail(e.target.value)}/>
 
@@ -79,7 +79,7 @@ const EmailForm = () => {
         id='phone'
         type='tel'
         name='phone'
-        placeholder='1 (920) 123 4567'
+        placeholder='1 (234) 567 8900'
         value={phone}
         onChange={(e) => setPhone(e.target.value)}/> 
 
