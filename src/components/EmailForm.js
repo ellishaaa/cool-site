@@ -74,8 +74,7 @@ const EmailForm = () => {
         onChange={(e) => setEmail(e.target.value)}/>
 
         <label htmlFor="phone" className="elementor-field-label">Phone</label> 
-        <input 
-        required
+        <input
         id='phone'
         type='tel'
         name='phone'
@@ -83,16 +82,7 @@ const EmailForm = () => {
         value={phone}
         onChange={(e) => setPhone(e.target.value)}/> 
 
-        <label htmlFor="date" className="elementor-field-label">Event date</label>
-        <input 
-        id='date'
-        required
-        type='date'
-        value={date}
-        pattern="[0-9]{4}-[0-9]{2}-[0-9]{2}"
-        onChange={(e) => setDate(e.target.value)}/>
-
-        <label htmlFor="event" className="elementor-field-label">Event type</label>
+        {/* <label htmlFor="event" className="elementor-field-label">Event type</label>
         <select
         className='mb-4'
         name="event"
@@ -116,7 +106,7 @@ const EmailForm = () => {
                 <option value="Fifteen years">Fifteen years</option>
                 <option value="Serenade">Serenade</option>
                 <option value="Sweet Sixteen">Sweet Sixteen</option>
-        </select>
+        </select> */}
 
     <button className='submit-btn' type='submit'>Submit</button>
 
