@@ -53,7 +53,7 @@ const EmailForm = () => {
     <div className='center'>
     <form method='POST' onSubmit={handleSubmit} className='emailForm'>
 
-        <label htmlFor="name" className="elementor-field-label">Names and surnames</label>
+        <label htmlFor="name" className="elementor-field-label">Name</label>
         <input 
         required
         id='name'
@@ -73,7 +73,7 @@ const EmailForm = () => {
         value={email}
         onChange={(e) => setEmail(e.target.value)}/>
 
-        <label htmlFor="phone" className="elementor-field-label">Phone</label> 
+        <label htmlFor="phone">Phone</label> 
         <input
         id='phone'
         type='tel'
@@ -90,7 +90,7 @@ const EmailForm = () => {
         name='message'
         value={name}
         placeholder='Give me the deets!'
-        onChange={(e) => setName(e.target.value)}></textarea>
+        onChange={(e) => setMessage(e.target.value)}></textarea>
 
 
     <button className='submit-btn' type='submit'>Submit</button>
