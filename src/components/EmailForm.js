@@ -91,6 +91,7 @@ const EmailForm = () => {
         name='message'
         value={message}
         placeholder='Give me the deets!'
+        rows='10'
         onChange={(e) => setMessage(e.target.value)}></textarea>
 
 
