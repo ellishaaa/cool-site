@@ -105,9 +105,12 @@ const EmailForm = () => {
                 <i className='fa-regular fa-envelope' />
                 <h2 className='pt-4 popup-heading'>THANK YOU</h2>
                 <p className='pb-4 mt-3'>your message has been sent!</p>
-                <button className='popup-btn mb-3'>Back to &nbsp; 
+                 <Link to='/'>
+                 <button className='popup-btn mb-3'>Back to &nbsp; 
                     <i class="fa-solid fa-house"></i>
                 </button>
+                 </Link>
+               
             </div>
             
     </Popup>
