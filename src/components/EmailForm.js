@@ -8,7 +8,7 @@ const EmailForm = () => {
         const [email, setEmail] = useState('');  
         const [phone, setPhone] = useState('');  
         const [date, setDate] = useState('');
-        const [event, setEvent] = useState('');  
+        const [message, setMessage] = useState('');  
   
         // Submit modal
         const [buttonPopup, setButtonPopup] = useState(false);
@@ -27,8 +27,8 @@ const EmailForm = () => {
             from_email: email, 
             from_phone: phone, 
             date: date,
-            to_name: 'Site owner', 
-            event: event,
+            to_name: 'Ellishaaa', 
+            message: message,
         };
 
         // Send email using EmailJS
@@ -42,7 +42,7 @@ const EmailForm = () => {
             setEmail('');
             setPhone('');
             setDate('');
-            setEvent('');
+            setMessage('');
         })
         .catch((error) => {
             console.error('Error sending email:', error);
@@ -82,31 +82,16 @@ const EmailForm = () => {
         value={phone}
         onChange={(e) => setPhone(e.target.value)}/> 
 
-        {/* <label htmlFor="event" className="elementor-field-label">Event type</label>
-        <select
-        className='mb-4'
-        name="event"
-        value={event}
-        id="event" 
+        <label htmlFor="message" className="elementor-field-label">Message</label>
+        <textarea 
         required
-        onChange={(e) => setEvent(e.target.value)}
-        >
-                <option value="" disabled >Select an event type</option>
-                <option value="Wedding Anniversary">Wedding Anniversary</option>
-                <option value="Wedding">Wedding</option>
-                <option value="Congress">Congress</option>
-                <option value="Birthdays">Birthdays</option>
-                <option value="Dedication">Dedication</option>
-                <option value="Business event">Business event</option>
-                <option value="Fair or exhibition">Fair or exhibition</option>
-                <option value="Corporate party">Corporate party</option>
-                <option value="Funeral">Funeral</option>
-                <option value="Mañanitas">Mañanitas</option>
-                <option value="Marriage proposals">Marriage proposals</option>
-                <option value="Fifteen years">Fifteen years</option>
-                <option value="Serenade">Serenade</option>
-                <option value="Sweet Sixteen">Sweet Sixteen</option>
-        </select> */}
+        id='message'
+        type='message'
+        name='message'
+        value={name}
+        placeholder='Give me the deets!'
+        onChange={(e) => setName(e.target.value)}></textarea>
+
 
     <button className='submit-btn' type='submit'>Submit</button>
 
