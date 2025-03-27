@@ -73,7 +73,7 @@ const EmailForm = () => {
         value={email}
         onChange={(e) => setEmail(e.target.value)}/>
 
-        <label htmlFor="phone">Phone</label> 
+        <label htmlFor="phone">Phone <span>(optional)</span></label> 
         <input
         id='phone'
         type='tel'
@@ -82,13 +82,14 @@ const EmailForm = () => {
         value={phone}
         onChange={(e) => setPhone(e.target.value)}/> 
 
+
         <label htmlFor="message" className="elementor-field-label">Message</label>
         <textarea 
         required
         id='message'
         type='message'
         name='message'
-        value={name}
+        value={message}
         placeholder='Give me the deets!'
         onChange={(e) => setMessage(e.target.value)}></textarea>
 
