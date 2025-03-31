@@ -28,7 +28,7 @@ const EmailForm = () => {
             from_phone: phone, 
             date: date,
             to_name: 'Ellishaaa', 
-            message: message,
+            from_message: message,
         };
 
         // Send email using EmailJS
