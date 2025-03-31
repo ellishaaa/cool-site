@@ -97,6 +97,10 @@
     font-size: 24px;
 }
 
+.social-icon-link:hover {
+    color: #f5a9ff !important;
+}
+
 .social-media {
     max-width: 1000px;
     width: 100%;
