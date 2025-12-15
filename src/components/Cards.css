@@ -121,6 +121,12 @@
   .cards--projects-page {
     padding-top: 6rem;
   }
+
+  .cards__section-title {
+    font-size: 1.75rem;
+    margin: 1.5rem 0 0.75rem;
+    text-align: left;
+  }
   
   @media only screen and (min-width: 1200px) {
     .content__blog__container {

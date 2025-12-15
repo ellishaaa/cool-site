@@ -13,18 +13,18 @@ function Cards() {
             <Fade>
               <CardItem
                 src="../images/img-home.jpg"
-                text="[Project One] A clean marketing site showcasing a fictional product with responsive layout."
-                label="React / CSS"
+                text="Mr. Wheel Deal – custom wheel & tire ecommerce built with PHP, React, and JS, focused on a smooth quote flow."
+                label="Ecommerce · PHP · React · JS"
                 path="/projects"
-                url="https://your-project-one-url.com"
+                url="https://www.mrwheeldeal.com/"
                 cta="View live site"
               />
               <CardItem
                 src="../images/img-2.jpg"
-                text="[Project Two] A small web app demonstrating interactive UI components and animations."
-                label="React / UI"
+                text="CHKD Careers – pediatric health careers site with clear paths, HTML/CSS layout, and accessible UI."
+                label="Healthcare · WordPress · HTML · CSS"
                 path="/projects"
-                url="https://your-project-two-url.com"
+                url="https://www.chkdcareers.org/"
                 cta="View live site"
               />
             </Fade>
@@ -33,26 +33,26 @@ function Cards() {
             <Fade>
               <CardItem
                 src="../images/img-3.jpg"
-                text="[Project Three] A minimal portfolio or landing page focused on typography and layout."
-                label="HTML / CSS"
+                text="Fitment Industries – high-volume React/PHP ecommerce with fitment search, galleries, and performance tuning."
+                label="Ecommerce · PHP · React · UI/UX"
                 path="/projects"
-                url="https://your-project-three-url.com"
+                url="https://www.fitmentindustries.com/"
                 cta="View live site"
               />
               <CardItem
                 src="../images/img-4.jpg"
-                text="[Project Four] A simple web experiment or fun side project that highlights creativity."
-                label="Experimental"
+                text="RWJBarnabas Health Careers – large healthcare careers hub with search, filtering, and responsive templates."
+                label="Healthcare · WordPress · JS · Responsive"
                 path="/projects"
-                url="https://your-project-four-url.com"
+                url="https://www.rwjbarnabashealthcareers.org/"
                 cta="View live site"
               />
               <CardItem
                 src="../images/img-5.jpg"
-                text="[Project Five] A small client-style site or clone that shows attention to detail."
-                label="Client-style"
+                text="MaineHealth Careers – multi-hospital careers experience focusing on information architecture and mobile UX."
+                label="Healthcare · WordPress · UI/UX · Mobile"
                 path="/projects"
-                url="https://your-project-five-url.com"
+                url="https://www.careersatmainehealth.org/"
                 cta="View live site"
               />
             </Fade>
