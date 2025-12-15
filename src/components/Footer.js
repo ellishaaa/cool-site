@@ -17,6 +17,17 @@ function Footer() {
         </div>
       </section>
 
+      <section className="footer-links">
+        <div className="footer-link-wrapper">
+          <div className="footer-link-items">
+            <h2>Explore</h2>
+            <Link to="/">Home</Link>
+            <Link to="/projects">Projects</Link>
+            <Link to="/about">About</Link>
+          </div>
+        </div>
+      </section>
+
       <section className="social-media">
         <div className="social-media-wrap">
           <small className="website-rights">

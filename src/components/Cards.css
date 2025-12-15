@@ -98,6 +98,29 @@
     font-size: 18px;
     line-height: 24px;
   }
+
+  .cards__item__btn {
+    display: inline-block;
+    margin-top: 16px;
+    padding: 8px 16px;
+    border-radius: 4px;
+    background-color: #1f98f4;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 600;
+    text-decoration: none;
+    letter-spacing: 0.5px;
+    transition: background-color 0.2s ease-in-out, transform 0.2s ease-in-out;
+  }
+
+  .cards__item__btn:hover {
+    background-color: #0f6fb4;
+    transform: translateY(-1px);
+  }
+
+  .cards--projects-page {
+    padding-top: 6rem;
+  }
   
   @media only screen and (min-width: 1200px) {
     .content__blog__container {
