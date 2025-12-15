@@ -2,6 +2,8 @@ import React from "react";
 import CardItem from "./CardItem";
 import "./Cards.css";
 import { Fade } from "react-reveal";
+import { Link } from "react-router-dom";
+import { Button } from "./Button";
 
 function Cards() {
   return (
@@ -12,51 +14,60 @@ function Cards() {
           <ul className="cards__items">
             <Fade>
               <CardItem
-                src="../images/img-home.jpg"
-                text="Mr. Wheel Deal – custom wheel & tire ecommerce built with PHP, React, and JS, focused on a smooth quote flow."
+                src="../images/mr-wheel-deal.png"
+                title="Mr. Wheel Deal"
+                description="Custom wheel & tire ecommerce built with PHP, React, and JS, focused on a smooth quote flow."
                 label="Ecommerce · PHP · React · JS"
-                path="/projects"
                 url="https://www.mrwheeldeal.com/"
-                cta="View live site"
+                cta="View Project"
               />
               <CardItem
-                src="../images/img-2.jpg"
-                text="CHKD Careers – pediatric health careers site with clear paths, HTML/CSS layout, and accessible UI."
-                label="Healthcare · WordPress · HTML · CSS"
-                path="/projects"
+                src="../images/chkd.png"
+                title="CHKD Careers"
+                description="Pediatric health careers site with clear paths, HTML/CSS layout, and accessible UI."
+                label="Healthcare · HTML/CSS · Mobile · JS"
                 url="https://www.chkdcareers.org/"
-                cta="View live site"
+                cta="View Project"
               />
             </Fade>
           </ul>
           <ul className="cards__items">
             <Fade>
               <CardItem
-                src="../images/img-3.jpg"
-                text="Fitment Industries – high-volume React/PHP ecommerce with fitment search, galleries, and performance tuning."
-                label="Ecommerce · PHP · React · UI/UX"
-                path="/projects"
+                src="../images/fitment.png"
+                title="Fitment Industries"
+                description="High-volume React/PHP ecommerce with fitment search, galleries, and performance tuning."
+                label="Ecommerce · PHP · Mobile · UI/UX"
                 url="https://www.fitmentindustries.com/"
-                cta="View live site"
+                cta="View Project"
               />
               <CardItem
-                src="../images/img-4.jpg"
-                text="RWJBarnabas Health Careers – large healthcare careers hub with search, filtering, and responsive templates."
-                label="Healthcare · WordPress · JS · Responsive"
-                path="/projects"
+                src="../images/RWJ.png"
+                title="RWJBarnabas Health Careers"
+                description="Large healthcare careers hub with search, filtering, and responsive templates."
+                label="Healthcare · WordPress · UI/UX · Responsive"
                 url="https://www.rwjbarnabashealthcareers.org/"
-                cta="View live site"
+                cta="View Project"
               />
               <CardItem
-                src="../images/img-5.jpg"
-                text="MaineHealth Careers – multi-hospital careers experience focusing on information architecture and mobile UX."
-                label="Healthcare · WordPress · UI/UX · Mobile"
-                path="/projects"
+                src="../images/mainehealth.png"
+                title="MaineHealth Careers"
+                description="Multi-hospital careers experience focusing on information architecture and mobile UX."
+                label="Healthcare · WordPress · Cross Browser · Mobile"
                 url="https://www.careersatmainehealth.org/"
-                cta="View live site"
+                cta="View Project"
               />
             </Fade>
           </ul>
+          <div className="cards__cta">
+            <Button
+              buttonStyle="btn--secondary"
+              buttonSize="btn--large"
+              to="/projects"
+            >
+              View all projects
+            </Button>
+          </div>
         </div>
       </div>
     </div>

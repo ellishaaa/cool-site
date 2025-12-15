@@ -2,7 +2,11 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 function CardItem(props) {
-  const { path, src, label, text, url, cta } = props;
+  const { path, src, label, title, description, text, url, cta } = props;
+
+  // Backwards compatibility: if title/description not provided, fall back to text
+  const heading = title || text;
+  const body = description || "";
 
   const content = (
     <>
@@ -10,7 +14,8 @@ function CardItem(props) {
         <img className="cards__item__img" alt={label || "Project"} src={src} />
       </figure>
       <div className="cards__item__info">
-        <h5 className="cards__item__text">{text}</h5>
+        {heading && <h5 className="cards__item__title">{heading}</h5>}
+        {body && <p className="cards__item__description">{body}</p>}
         {url && (
           <a
             className="cards__item__btn"
@@ -19,6 +24,7 @@ function CardItem(props) {
             rel="noreferrer"
           >
             {cta || "View site"}
+            <span className="cards__item__btn-icon">→</span>
           </a>
         )}
       </div>

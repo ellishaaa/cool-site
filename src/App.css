@@ -3,12 +3,17 @@
   margin: 0;
   padding: 0;
   font-family: "PT Sans", sans-serif;
+  font-weight: bold;
 }
 
+h1 {
+  font-weight: bold;
+}
 .home,
 .services,
 .products,
-.sign-up {
+.sign-up,
+.about-me {
   display: flex;
   height: 90vh;
   align-items: center;
@@ -34,12 +39,17 @@
   font-size: 100px;
 }
 
-.sign-up {
+.sign-up,
+.about-me {
   background-image: url("images/Lilac_wave.jpeg");
   height: 10rem;
   background-position: bottom;
   background-size: cover;
   color: #fff;
+}
+
+.sign-up h1,
+.about-me h1 {
   font-size: 5rem;
 }
 
@@ -50,10 +60,6 @@
   justify-content: center;
   padding: 4rem 1.5rem;
   background: #f9f9ff;
-}
-
-.about__inner {
-  max-width: 800px;
 }
 
 .about__title {
@@ -67,15 +73,27 @@
   margin-bottom: 0.75rem;
 }
 
-.about__text {
-  font-size: 1rem;
+.about__text,
+.about__subtitle {
+  font-size: 1.35rem;
   line-height: 1.7;
-  margin-bottom: 1rem;
+  margin-bottom: 1.5rem;
+  font-weight: 400;
+}
+
+.about__subtitle {
+  margin-top: 3rem;
+  font-weight: bold;
+}
+.about__list li {
+  font-size: 1.35rem;
+  font-weight: 400;
 }
 
 .about__list {
   list-style: disc;
   padding-left: 1.25rem;
+  margin-bottom: 3rem;
 }
 
 .container {
@@ -183,4 +201,24 @@ label {
   background-color: #fff;
   color: #242424;
   transition: all 0.3s ease-out;
+}
+
+.about__inner {
+  margin: 4vw 20vw;
+  font-size: 1.45rem;
+}
+
+@media screen and (max-width: 767px) {
+  .about__inner {
+    margin: 10vw 10vw;
+  }
+}
+
+.about__inner a {
+  color: #d44edb;
+}
+
+.about__inner a:hover {
+  color: #88318d;
+  text-decoration: none !important;
 }

@@ -34,11 +34,7 @@ function Navbar() {
         <div className="navbar-container">
           <Link to="/" className="navbar-logo" onClick={closeMobileMenu}>
             ellishaaa.dev{" "}
-            <img
-              alt="logo"
-              className="nav-img"
-              src="../images/WhoopieCushion.png"
-            />
+            <img alt="logo" className="nav-img" src="../images/star-logo.png" />
           </Link>
           <div className="menu-icon" onClick={handleClick}>
             <i className={click ? "fas fa-times" : "fas fa-bars"}></i>
@@ -55,7 +51,7 @@ function Navbar() {
                 className="nav-links"
                 onClick={closeMobileMenu}
               >
-                Projects
+                Portfolio
               </Link>
             </li>
             <li className="nav-item">
@@ -69,17 +65,19 @@ function Navbar() {
                 className="nav-links-mobile"
                 onClick={closeMobileMenu}
               >
-                Contact
+                Contact Me
               </Link>
             </li>
           </ul>
           {button && (
             <Button
               buttonStyle="btn--outline"
+              buttonSize="btn--medium"
               className="btn-sign-up"
+              to="/sign-up"
               onClick={closeMobileMenu}
             >
-              Contact
+              Contact Me
             </Button>
           )}
         </div>
