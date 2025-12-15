@@ -1,26 +1,25 @@
-import './App.css';
-import Navbar from './components/Navbar';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import Home from './components/Pages/Home';
-import Services from './components/Pages/Services';
-import Products from './components/Pages/Products';
-import SignUP from './components/Pages/SignUp';
-import Footer from './components/Footer';
+import "./App.css";
+import Navbar from "./components/Navbar";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Home from "./components/Pages/Home";
+import Projects from "./components/Pages/Products";
+import About from "./components/Pages/Services";
+import SignUP from "./components/Pages/SignUp";
+import Footer from "./components/Footer";
 
 function App() {
   return (
     <>
       <Router>
-      <Navbar />
+        <Navbar />
         <Routes>
-          <Route path='/' exact Component={Home}/>
-          <Route path='/services' exact Component={Services}/>
-          <Route path='/products' exact Component={Products}/>
-          <Route path='/sign-up' exact Component={SignUP}/>
+          <Route path="/" element={<Home />} />
+          <Route path="/projects" element={<Projects />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/sign-up" element={<SignUP />} />
         </Routes>
-      <Footer/>
+        <Footer />
       </Router>
-
     </>
   );
 }
