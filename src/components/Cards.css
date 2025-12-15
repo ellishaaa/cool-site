@@ -190,4 +190,12 @@ h1 {
   .cards--projects-page {
     padding: 1rem;
   }
+
+  .cards {
+    padding: 1rem;
+    padding-top: 3rem;
+  }
+  .cards > h1 {
+    padding: 1rem;
+  }
 }
