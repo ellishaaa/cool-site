@@ -17,7 +17,7 @@ function Cards() {
                 src="../images/mr-wheel-deal.png"
                 title="Mr. Wheel Deal"
                 description="Custom wheel & tire ecommerce built with PHP, React, and JS, focused on a smooth quote flow."
-                label="Ecommerce · PHP · React · JS"
+                label="Ecommerce · PHP · Mobile · JS"
                 url="https://www.mrwheeldeal.com/"
                 cta="View Project"
               />
