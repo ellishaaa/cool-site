@@ -23,8 +23,8 @@ function CardItem(props) {
             target="_blank"
             rel="noreferrer"
           >
-            {cta || "View site"}
-            <span className="cards__item__btn-icon">→</span>
+            {cta || "View Project"}
+            <span className="cards__item__btn-icon">►</span>
           </a>
         )}
       </div>

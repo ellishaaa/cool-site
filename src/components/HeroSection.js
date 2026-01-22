@@ -9,7 +9,7 @@ function HeroSection() {
     <div className="hero-container">
       <video src="/videos/Purple_video.mp4" autoPlay loop muted />
       <h1>Web Developer & Designer</h1>
-      <p>5+ years of building clean, user-focused digital experiences</p>
+      <p>Turning ideas into clean, user-focused digital experiences.</p>
 
       <div className="hero-btns">
         <Link to="/about">
