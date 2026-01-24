@@ -11,7 +11,7 @@ function CardItem(props) {
   const content = (
     <>
       <figure className="cards__item__pic-wrap" data-category={label}>
-        <img className="cards__item__img" alt={label || "Project"} src={src} />
+        <img className="cards__item__img" alt={heading} src={src} />
       </figure>
       <div className="cards__item__info">
         {heading && <h5 className="cards__item__title">{heading}</h5>}

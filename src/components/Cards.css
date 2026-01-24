@@ -59,17 +59,7 @@ h1 {
 }
 
 .cards__item__pic-wrap::after {
-  content: attr(data-category);
-  position: absolute;
-  bottom: 0;
-  margin-left: 10px;
-  padding: 8px 10px;
-  max-width: calc((100%) - 60px);
-  font-size: 14px;
-  font-weight: 700;
-  color: #fff;
-  background-color: #1f98f4;
-  box-sizing: border-box;
+  display: none;
 }
 
 .cards__item__img {
